@@ -1,0 +1,22 @@
+function findPair(numbers) {
+  const pairs = [];
+
+  // loop through the array of numbers
+  for (let i = 0; i < numbers.length; i++) {
+    // loop through the remaining numbers
+    for (let j = i + 1; j < numbers.length; j++) {
+      // if the sum of the two numbers equals the target, add them to the pairs array
+      if (numbers[i] + numbers[j] === target) {
+        pairs.push([numbers[i], numbers[j]]);
+      }
+    }
+  }
+
+  return pairs;
+}
+const numbers = [1, 2, 3, 4, 5];
+const target = 6;
+
+console.log(findPair(numbers)); // Output: [[1, 5], [2, 4]]
+
+

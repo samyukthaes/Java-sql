@@ -1,0 +1,14 @@
+function reverseString(inputString) {
+  // Check if input string contains Malayalam characters
+  const malayalamRegex = /[\u0D00-\u0D7F]/g; // Regular expression to match Malayalam characters
+  if (malayalamRegex.test(inputString)) {
+    throw new Error('Input string contains Malayalam characters');
+  }
+
+  // Reverse the input string
+  const reversedString = inputString.split('').reverse().join('');
+
+  return reversedString;
+}
+console.log(reverseString('Hello, world!')); // Output: !dlrow ,olleH
+console.log(reverseString('നമസ്കാരം')); // Throws error: Input string contains Malayalam characters

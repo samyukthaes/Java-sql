@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example Form</title>
+    <style>
+        body {
+          background-color: rgb(228, 215, 44);
+          text-align: center;
+          
+          }
+          .my-button {
+  background-color:yellow;
+  color:black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-color: black;
+  
+}
+table{
+    margin:auto;
+}
+    </style>
+    
+    
+  </head>
+  <body>
+    <form>
+      <label for="Principal Loan Amount(Rs.)">Principal Loan Amount(Rs.):</label>
+      <input type="Principal Loan Amount(Rs.)" id="Principal Loan Amount(Rs.)"name="Principal Loan Amount(Rs.)"><br><br>
+
+      <label for="Interest Rate(%)">Interest Rate(%):</label>
+      <input type="Interest Rate(%)" id="Interest Rate(%)" name="Interest Rate(%)"><br><br>
+
+      <label for="Tenure(in Months)">Tenure(in Months):</label>
+      <input type="Tenure(in Months)"id="Tenure(in Months)" name="Tenure(in Months)"></input><br><br>
+
+      <button class="my-button">Estimate</button>
+      
+
+    </form>
+  </body>
+</html>
+
+
+<h3>Loan Estimation</h3>
+<table>
+        <thead>
+          <tr>
+            <th>Details</th>
+            <th>Reducing Interest loan</th>
+            <th>Fixed interest loan</th>
+          </tr>
+
+        </thead>
+        <tbody>
+          <tr>
+            <td>Total Interest (Rs)</td>
+            <td><input type="number" name="reducinginterest_interest" id="reducinginterest_interest"></td>
+            <td><input type="number" name="fixedinterest_interest" id="fixedinterest_interest"></td>
+          </tr>
+          <tr>
+            <td>Total Payment (Rs)</td>
+            <td><input type="number" name="reducinginterest_payment" id="reducinginterest_payment"></td>
+            <td><input type="number" name="fixedinterest_payment" id="fixedinterest_payment"></td>
+          </tr>
+          <tr>
+            <td>Monthly EMI (Rs)</td>
+            <td><input type="number" name="reducinginterest_emi" id="reducinginterest_emi"></td>
+            <td><input type="number" name="fixedinterest_emi" id="fixedinterest_emi"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      
